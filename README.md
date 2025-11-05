@@ -1,33 +1,43 @@
-📊 StreamNow – Particionamento de Dados no PostgreSQL
-Este projeto foi desenvolvido para demonstrar o uso de particionamento de dados no PostgreSQL com foco em desempenho e organização para grandes volumes de dados, simulando uma plataforma de streaming chamada StreamNow.
-A plataforma possui milhões de usuários e bilhões de registros de reproduções, então o particionamento ajuda a melhorar consultas, manutenção e escalabilidade.
-🎯 Objetivo
-Criar tabelas particionadas no PostgreSQL
-Definir partições adequadas para cada tabela
-Inserir dados e realizar consultas
-Mostrar evidências com prints
-Organizar tudo no repositório no padrão solicitado
-🧠 Estratégia de Particionamento
-📁 Tabela usuarios
-Particionamento escolhido: LIST (por país)
-Motivo: A maioria das consultas de marketing envolve comparar países e analisar crescimento por região. Como existem muitos países, mas fizemos exemplo simples, LIST é adequado para separar por país.
-Benefício: Facilita consultas e comparações entre países e também organização dos dados.
-🎥 Tabela reproducoes
-Particionamento escolhido: RANGE (por data de reprodução)
-Motivo: A tabela cresce diariamente com milhões de novos registros. Consultas comuns são por mês e período.
-Benefício: Melhora performance em consultas por período e facilita arquivamento de dados antigos.
-📁 Estrutura do Repositório
-streamnow-particionamento/
-│
-├── scripts/
-│ ├── 01_create_tables.sql
-│ ├── 02_create_partitions.sql
-│ ├── 03_inserts.sql
-│ ├── 04_queries.sql
-│
-├── prints/
-│
-└── README.md
+# 📊 StreamNow – Particionamento de Dados no PostgreSQL
+
+Este projeto demonstra o uso de particionamento no PostgreSQL para otimizar desempenho e organização de grandes volumes de dados.  
+O cenário simula uma plataforma de streaming chamada **StreamNow**, com milhões de usuários e bilhões de registros de reprodução.
+
+## 🎯 Objetivo do Projeto
+
+- Criar tabelas particionadas
+- Definir partições adequadas para cada tabela
+- Inserir dados e realizar consultas
+- Evidenciar o funcionamento com prints
+- Organizar repositório de forma profissional
+
+---
+
+## 🧠 Estratégia de Particionamento
+
+### 📁 Tabela `usuarios`
+**Tipo:** LIST (por país)  
+
+**Motivo:**
+- Consultas frequentes por país e região
+- Estratégias de marketing e expansão regional
+
+**Benefícios:**
+- Organização por país
+- Melhora consultas segmentadas
+
+### 🎥 Tabela `reproducoes`
+**Tipo:** RANGE (por data)  
+
+**Motivo:**
+- Alto volume de registros diários
+- Consultas por períodos específicos
+
+**Benefícios:**
+- Performance em consultas por faixa de datas
+- Facilita arquivamento e manutenção
+
+---
  
 ## Prints das Consultas
 
@@ -47,10 +57,22 @@ streamnow-particionamento/
 ![Total de horas assistidas](prints//query_reproducoes.png/total_horas_assistida.jpg)
 
 
-✅ Conclusão
-O particionamento ajudou a:
-Melhorar consultas frequentes
-Organizar grandes volumes de dados
-Facilitar manutenção do banco
+## ✅ Conclusão
+
+O particionamento:
+
+- Melhorou o desempenho das consultas
+- Organizou os dados de forma eficiente
+- Ajudou a simular um ambiente real de streaming
+- Facilitou manutenção e escalabilidade do banco
+
+Este projeto segue as práticas estudadas em sala e cumpre todos os requisitos da atividade.
+
+---
+
+### 👨‍💻 Autor
+
+Projeto desenvolvido por **João Pedro Lima Barbosa**  
+Disciplina: Banco de Dados – Engenharia de Software – 2025
 Simular cenário real de streaming
 Esse projeto segue as boas práticas aprendidas em sala e cumpre os requisitos da atividade prática.
