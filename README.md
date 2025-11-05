@@ -35,16 +35,16 @@ streamnow-particionamento/
 ![Partição usuários](prints/query_usuarios.png/particao_usuarios.jpg)
 
 ### 2️⃣ Usuários cadastrados em 2023  
-![Usuários cadastrados 2023](prints/usuarios_cadastrados2023.jpg)
+![Usuários cadastrados 2023](prints/query_usuarios.png/usuarios_cadastrados2023.jpg)
 
 ### 3️⃣ Partição das reproduções  
-![Partição reproduções](prints/particao_reproducoes.jpg)
+![Partição reproduções](prints/query_usuarios.png/particao_reproducoes.jpg)
 
 ### 4️⃣ Total de reproduções por categoria  
-![Reproduções por categoria](prints/reproducao_categoria.jpg)
+![Reproduções por categoria](prints/query_usuarios.png/reproducao_categoria.jpg)
 
 ### 5️⃣ Total de horas assistidas  
-![Total de horas assistidas](prints/total_horas_assistida.jpg)
+![Total de horas assistidas](prints/query_usuarios.png/total_horas_assistida.jpg)
 
 
 ✅ Conclusão
