@@ -38,6 +38,22 @@ O cenário simula uma plataforma de streaming chamada **StreamNow**, com milhõe
 - Facilita arquivamento e manutenção
 
 ---
+
+streamnow-particionamento/
+│
+├── scripts/
+│   ├── 01_create_tables.sql
+│   ├── 02_create_partitions.sql
+│   ├── 03_inserts.sql
+│   ├── 04_queries.sql
+│
+├── README.md
+│
+└── prints/
+    ├── query_usuarios.png
+    ├── query_reproducoes.png
+
+
  
 ## Prints das Consultas
 
