@@ -29,7 +29,7 @@ streamnow-particionamento/
 │
 └── README.md
  
-## 🖥️ Prints das Consultas
+## Prints das Consultas
 
 ### 1️⃣ Partição dos usuários  
 ![Partição usuários](prints/particao_usuarios.jpg)
