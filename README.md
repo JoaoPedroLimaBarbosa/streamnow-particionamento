@@ -1,25 +1,22 @@
-# streamnow-particionamento
-# 📺 StreamNow – Particionamento no PostgreSQL
-
-Projeto acadêmico para demonstrar particionamento de dados no PostgreSQL usando RANGE.
-
-## 🎯 Cenário
-A StreamNow é uma plataforma de streaming com milhões de usuários e bilhões de reproduções. Para melhorar performance e organização dos dados, adotamos particionamento em tabelas críticas.
-
-## 🧠 Estratégia de Particionamento
-
-### ✅ Tabela `usuarios`
-- Coluna: `data_cadastro`
-- Tipo: RANGE por ano
-- Motivo: consultas de marketing por período, tendência de crescimento anual, picos por temporada.
-
-### ✅ Tabela `reproducoes`
-- Coluna: `data_reproducao`
-- Tipo: RANGE por ano
-- Motivo: milhões de registros por dia, consultas por período, arquivamento fácil.
-
-## 📂 Estrutura do projeto
-
+📊 StreamNow – Particionamento de Dados no PostgreSQL
+Este projeto foi desenvolvido para demonstrar o uso de particionamento de dados no PostgreSQL com foco em desempenho e organização para grandes volumes de dados, simulando uma plataforma de streaming chamada StreamNow.
+A plataforma possui milhões de usuários e bilhões de registros de reproduções, então o particionamento ajuda a melhorar consultas, manutenção e escalabilidade.
+🎯 Objetivo
+Criar tabelas particionadas no PostgreSQL
+Definir partições adequadas para cada tabela
+Inserir dados e realizar consultas
+Mostrar evidências com prints
+Organizar tudo no repositório no padrão solicitado
+🧠 Estratégia de Particionamento
+📁 Tabela usuarios
+Particionamento escolhido: LIST (por país)
+Motivo: A maioria das consultas de marketing envolve comparar países e analisar crescimento por região. Como existem muitos países, mas fizemos exemplo simples, LIST é adequado para separar por país.
+Benefício: Facilita consultas e comparações entre países e também organização dos dados.
+🎥 Tabela reproducoes
+Particionamento escolhido: RANGE (por data de reprodução)
+Motivo: A tabela cresce diariamente com milhões de novos registros. Consultas comuns são por mês e período.
+Benefício: Melhora performance em consultas por período e facilita arquivamento de dados antigos.
+📁 Estrutura do Repositório
 streamnow-particionamento/
 │
 ├── scripts/
@@ -31,11 +28,27 @@ streamnow-particionamento/
 ├── prints/
 │
 └── README.md
+ 
+🖥️ Prints das Consultas
+1️⃣ Usuários por país
 
-## 🧪 Consultas realizadas
 
-- Contagem de usuários por ano
-  
-- Reproduções por categoria
-- Horas assistidas por período
-- Identificação de partição por `tableoid`
+2️⃣ Usuários cadastrados por mês
+
+
+3️⃣ Total de reproduções por categoria
+
+
+4️⃣ Total de horas assistidas no mês
+
+
+5️⃣ Histórico de reproduções em um período
+
+
+✅ Conclusão
+O particionamento ajudou a:
+Melhorar consultas frequentes
+Organizar grandes volumes de dados
+Facilitar manutenção do banco
+Simular cenário real de streaming
+Esse projeto segue as boas práticas aprendidas em sala e cumpre os requisitos da atividade prática.
