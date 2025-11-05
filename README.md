@@ -32,7 +32,7 @@ streamnow-particionamento/
 ## Prints das Consultas
 
 ### 1️⃣ Partição dos usuários  
-![Partição usuários](prints/particao_usuarios.jpg)
+![Partição usuários](query_usuarios.png/particao_usuarios.jpg)
 
 ### 2️⃣ Usuários cadastrados em 2023  
 ![Usuários cadastrados 2023](prints/usuarios_cadastrados2023.jpg)
