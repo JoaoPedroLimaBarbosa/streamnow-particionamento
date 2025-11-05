@@ -29,20 +29,22 @@ streamnow-particionamento/
 │
 └── README.md
  
-🖥️ Prints das Consultas
-1️⃣ Usuários por país
+## 🖥️ Prints das Consultas
 
+### 1️⃣ Partição dos usuários  
+![Partição usuários](prints/particao_usuarios.jpg)
 
-2️⃣ Usuários cadastrados por mês
+### 2️⃣ Usuários cadastrados em 2023  
+![Usuários cadastrados 2023](prints/usuarios_cadastrados2023.jpg)
 
+### 3️⃣ Partição das reproduções  
+![Partição reproduções](prints/particao_reproducoes.jpg)
 
-3️⃣ Total de reproduções por categoria
+### 4️⃣ Total de reproduções por categoria  
+![Reproduções por categoria](prints/reproducao_categoria.jpg)
 
-
-4️⃣ Total de horas assistidas no mês
-
-
-5️⃣ Histórico de reproduções em um período
+### 5️⃣ Total de horas assistidas  
+![Total de horas assistidas](prints/total_horas_assistida.jpg)
 
 
 ✅ Conclusão
